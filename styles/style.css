@@ -53,7 +53,11 @@ a[href*="comments"]:hover {
 }
 
 /* All Post's Author's Links Bold and Blue, with no Underline */
-
+h3 a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
 /* Article Paragraph Text should have line height of 200% */
 article p {
     line-height: 200%;
@@ -70,18 +74,23 @@ article img:first-child {
 }
 
 /* The First Top Cat Section (check the bottom of the HTML file) should have a Golden Background */
-/*aside img:first-of-type {*/
-/*    background-color: goldenrod;*/
-/*    padding*/
-/*}*/
+#top-cats > section:nth-child(2) {
+    background-color: goldenrod;
+}
 
 /* The 2nd Top Cat Section Should have a Silver/gray Background */
-
+#top-cats > section:nth-child(3) {
+    background-color: silver;
+}
 /* The 3rd-Most Top Cat Should have a Bronze/brown Background
    Note: the HTML for this one is a little odd! This is intentional! */
-
+aside + section {
+    background-color: sandybrown;
+}
 /* Every other Article's Post-Content Background Color to a Light Grey */
-
+main article:nth-child(even) section{
+    background-color: lightgrey;
+}
 
 /* All Top Kitten's Profile Photos Rounded */
 #top-cats img{
